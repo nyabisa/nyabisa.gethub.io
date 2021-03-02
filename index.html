@@ -1,0 +1,332 @@
+# nyabisa.gethub.io
+Blog website
+<!Doctype html>
+<html> 
+    <head>
+    
+        <title> My blog</title>
+          <meta charset="utf-8">
+        
+        <style>
+            body {
+                background-color:rgb(237, 189, 171);
+            }
+            
+            h1 {
+                font-size:3em;
+                font-style:italic;
+            }
+            
+            #first-p{
+                font-style:italic;
+            }
+            
+            .text-color{
+                color:rgb(112, 41, 17);
+             
+            }
+            
+            h4 {
+                font-weight:bold;
+                font-size:1.3em;
+            }
+            
+            a {
+                color:rgb(125, 42, 12);
+            }
+            #back-to-blue{
+                color:blue;
+            }
+            p {
+                color:rgb(112, 41, 17);
+            }
+            ul{
+                color:rgb(112, 41, 17);
+            }
+        </style>
+        
+    </head>
+      <body>
+        <h1 class="text-color">Neri's Blog</h1>
+        
+        <p class="text-color" id="first-p"> Welcome to my blog! Glad you're here! I'll be talking about what I've learned so far about programming on Khan Academy. If you're interested in programming then I think you'll find this interesting. Hope you enjoy it!!</p>
+        
+        <p id="short-cuts" >Short-cuts:</p>
+        <ul>
+            <li > <a href="#html">Starting with html</a></li>
+            <li > <a href="#head">Moving on to the &lt;head> tag</a></li>
+            <li ><a href="#body">Let's Talk Body</a></li>
+            <li > <a href="#break">Breaks</a></li>
+            <li > <a href="#pictures">What about Pictures?</a></li>
+            <li > <a href="#emphasize"> How to emphasize words</a></li>
+            <li > <a href="#style">Styling (CSS)</a></li>
+            <li > <a href="#selectors">Selectors</a></li>
+            <li > <a href="#id">ID's</a></li>
+            <li > <a href="#class"> Classes</a></li>
+            <li > <a href="#background-color">Background Color</a> </li>
+            <li > <a href="#ID">Links</a></li>
+            <li> <a href="#jump-around">Jumping around a Web-Page</a></li>
+        </ul>
+        
+        <h2 class="text-color">Undestanding Basic Web Layout</h2>
+        
+        <h4 id="html" class="text-color">Starting With &lt;html></h4>
+        
+        <p>We'll start form the very beginning. <br>
+        
+At the very top of every coding sheet you will see the tag <strong>&lt;!Doctype html></strong> <br>
+
+    This lets the computer know that you are going to be using <strong>html</strong>. The computer needs to know what language you will be writing in so it can understand you.<br>
+    HTML stands for HyperText Markup Language.
+</p>
+
+         <p > Following the Doctype tag there will be an &lt;html> tag. Every tag needs to be opened and closed. This means that they will have an opening tag which in this case is <strong>&lt;html></strong> and the closing tag will be <strong>&lt;/html></strong>. The only difference is the slash at the beginning. This will let the computer know where your code begins and ends</p>
+         
+<a href="#short-cuts" id="back-to-blue"> Back to short cuts</a>
+         
+         <h4 id="head" class="text-color">Moving on to the &lt;head> tag</h4>
+         
+         <p>The &lt;head> tag is necessary for the information that will be used in the web page. It is referred to as <strong>metadata</strong>. Inside this tag will be the <strong> &lt;title>&lt;/title> </strong> which is required to create a page.<br>
+             
+For future reference, when you place information "inside" a tag you are placing it between the opening and closing tag.</p>
+
+         <p>Inside the head tag you will also find this very specific and particular tag:<strong> &lt;meta charset="utf-8">.</strong><br>This tag lets the computer know what format to use to turn the code into readable characters for wahtever you're making.</p>
+         
+         <p><em>Here's what it would look like so far:</em><br>
+         <br>
+         <strong>
+             &lt;!Doctype html><br>
+             &lt;html><br>
+             <br>
+             -----&lt;title> "Title" &lt;/title><br>
+             -----&lt;meta charset="utf-8"><br>
+            <br>
+             &lt;/html>
+             </strong>
+         </p>
+         
+         <p> I know it looks confusing but hopefully it's a little bit less scary now that you have an idea what they all do.<br>
+             But remember, this is barely scratching the surface. So keep on reading if you want to gain even more knowledge on how programming works
+         </p>
+<a href="#short-cuts" id="back-to-blue"> Back to short cuts</a>     
+<br>
+         <h4 id="body" class="text-color"> Let's talk &lt;body></h4>
+         <p>Inside of the &lt;body> tag you will find absolutely everything that has to do with the content of a web-page. You will need to use other tags inside the body tag to make headings, paragraphs, bullet points, numbered lists, insert images, ect., ect. </p>
+         
+         <p>We'll talk about the headings and paragraphs first.<br>
+             To make a heading you use the &lt;h> tag. This tag will always be accompanied by a number inside it. There's 6 headings. Number 1 is the largest, so it's used for the most important headings. As the numbers go down to 6, they are used for less important headings. For example the heading tag I used above was &lt;h4>. <em>In code, it looks like this:</em><br>
+             <br>
+            <strong> &lt;h4> Whatever you want to write &lt/h4></strong><br>
+             <br>
+         </p>
+         
+         <p>To make a paragraph, or any type of text body that isn't a heading, you will use the &lt;p> tag. It's really quite simple. <em>It looks like this:</em><br>
+         <br>
+         <strong>&lt;p> Once again whatever you want to write&lt;/p></strong>
+         </p> 
+         <a href="#short-cuts" id="back-to-blue"> Back to short cuts</a>     
+         <h4 id="break" class="text-color">Breaks</h4>
+         <p> When you open a &lt;p>  tag the computer will read it as a paragraph without end. I can keep on writing and writing and the computer will keep reading it as a whole paragraph. What if I want a space between sentences? In a word page you can just click enter and it takes you right underneath your last sentence. In code you need to use breaks.<br>
+             Breaks allow you to <br>
+             go underneath a sentence<br>
+             Inside of a &lt;p> tag <br>
+             whenever you want. <br>
+             I think I made my point. The break tag is <strong>&lt;br></strong>. It's used at the end of whatever sentence you want to space out
+             <br>
+             <em>It look like this:</em><br>
+             <br>
+             <strong>&lt;p> I'm writing a sentence but now I want to &lt;br><br>
+             break it up and bring it underneath &lt;/p></strong><br>
+             <br>
+             It can also be used to add additional spaces to make several paragraphs within a &ltp> tag. <em>That will look like this:</em><br>
+             <br>
+            <strong> &lt;p> i'm writing and writing &lt;br><br>
+             &ltbr><br>
+             And now I'm writing again &lt;p></strong><br>
+            <br>
+            That &lt;br> tag in the middle that's alone will be registered as an empty space.
+         </p>
+         <a href="#short-cuts" id="back-to-blue"> Back to short cuts</a>
+         <h4 id="pictures" class="text-color">What about Pictures?</h4>
+         
+         <p> Say you want to add pictures to whatever webpage you're making. How exactly do you do that? You use a tag. <br>
+         <br>
+<strong>&lt;img src=""></strong><br>
+<br>
+You might be able to guess that "img" stands for image. "Src" stands for source.<br>
+When you have an equal sign after a word we call this an <strong><em>attribute</em></strong>. An attribute will be followed by an equal sign and quotation marks. Inside the quotation marks there will be a <strong><em>declaration</em></strong>.<br>
+An attribute tells a computer what to do and a declaration tells the computer how to do it.<br>
+The declaration of the attribute <strong>src=""</strong> will be the URL of the pciture you're selecting.
+         </p>
+         <a href="#short-cuts" id="back-to-blue"> Back to short cuts</a>
+         <h4 id="emphasize" class="text-color">How to emphasize words</h4>
+         <p>To emphasize words we either <em>italicize</em> them or we make them <strong>bold.</strong><br>
+             How do we do this? If you said tags, you're right!<br>
+             To italicize a word we use the &lt;em> &lt;/em> tag. "em" stands for emphasize. Pretty straight forward.
+         </p>
+         
+         <p> To make a word bold you use the &ltstrong> &lt;/strong> tag. I believe this is pretty self-explanatory.</p>
+         <a href="#short-cuts" id="back-to-blue"> Back to short cuts</a>
+         <h4 id="style" class="text-color">Styling (CSS)</h4>
+         <p> Now that we've gone over how to put text on a webpage, let's go over on how to style it. First we'll learn how to change the colors of the text and the background.<br>
+        CSS stands for <strong>Cascating Style Sheet.</strong> CSS is a completely different language than HTML. We'll be using CSS to style so we'll need to open a <strong>&lt;style> &lt;/style></strong> tag. This tag will let them computer know that anything inside it will be using CSS. This tag will  be inside of the head tag. <em>It'll look like this:</em><br>
+        <br>
+        <strong>
+             &lt;!Doctype html><br>
+             &lt;html><br>
+             <br>
+             -----&lt;title> "Title" &lt;/title><br>
+             -----&lt;meta charset="utf-8"><br>
+            <br>
+             -----<em>&lt;style> &lt;/style></em><br>
+             <br>
+             &lt;/html>
+             </strong>
+         </p>
+         <a href="#short-cuts" id="back-to-blue"> Back to short cuts</a>
+         <h4 id="selectors" class="text-color">Selectors</h4>
+         <p>To be able to change the color of a text you need to select what portion you're going to be changing first. You do this by using a selector. They're pretty easy and straight-forward to use.<br>
+         If you want to select a paragraph you'll use the selctor <strong>"p"</strong>. Selectors are followed by {squiggly paranthesis}. You need to make sure that those are the ones you use otherwise the selctors won't work. <br>
+         Inside the paranthesis you will use the declaration <strong>color:;</strong> to change the color of a text.<br>
+         <em>It'll look like this:<br></em>
+         <strong>
+             &lt;!Doctype html><br>
+             &lt;html><br>
+             <br>
+             -----&lt;title> "Title" &lt;/title><br>
+             -----&lt;meta charset="utf-8"><br>
+            <br>
+             -----&lt;style><br>
+             <br>
+             ----------p { <br>
+             ---------------color: rgb(0, 0, 0);<br>
+             ----------}<br>
+             <br>
+             -----&lt;/style><br>
+             <br>
+             &lt;/html>
+             </strong><br>
+             <br>
+             Now all of your &lt;p> tags have the same color with just one selector. The computer recognizes colors through numbers. You could always use words for simple colors such as blue, red, green, ect. The word would go inbetween the colon and semi-colon with no paranthesis.<br>
+             <em>So it  would like this:</em><br>
+             <br><strong>&lt;style> p{color: blue;} &lt;/style></strong><br>
+             <br>
+             To get a more specific color you use the rgb color picker, which looks like the code above with the numbers in it. By inputing rgb( ), you will immediately see a little square and can then pick whatever color you want. I personally prefer the color picker because I find it makes the webpage more interesting.
+         </p>
+         <a href="#short-cuts" id="back-to-blue"> Back to short cuts</a>
+         <h4 id="id" class="text-color">ID's</h4>
+         
+         <p> The only downside to a selector is that it's generalized. If you choose a "p" tag it'll color all the "p" tags. What if you want to change the color of a specific paragraph? That's where the ID comes in.<br>
+         By giving a tag a unique ID you can use it to style a specific section. Thats sounds confusing but it's actually quite simple.<br>
+         Let's continue with the &ltp> tag. Let's say I have five different &lt;p> tags but I want to color the first one purple. The first thing I need to do is give the tag an ID. <em>It'll look like this:</em><br>
+         <br>
+         <strong>&lt;p id="purple"> Whatever you wrote &lt;/p></strong><br>
+         <br>
+         I chose to give the tag the id "purple". Now to change the color I need to go to the styling tag. To select an ID you need to use a # sign. This lets the computer know to look for the ID that you're about to write.<br>
+         <br>
+      <strong>
+             &lt;!Doctype html><br>
+             &lt;html><br>
+             <br>
+             -----&lt;title> "Title" &lt;/title><br>
+             -----&lt;meta charset="utf-8"><br>
+            <br>
+             -----&lt;style><br>
+             <br>
+            #purple {<br>
+            ----- color: purple;<br>
+            }
+             <br>
+             -----&lt;/style><br>
+             <br>
+             &lt;/html>
+             </strong><br>
+            <br>
+            Now you have the id inside the style tag and you have changed the color to purple. Only the paragraph that has that ID will change color. You also need to keep in mind that ID's are case sensititve. They both need to be written exactly the same way.
+         </p>
+         <a href="#short-cuts" id="back-to-blue"> Back to short cuts</a>
+         <h4 id="class" class="text-color"> Classes</h4>
+         <p>Now let's say that I had a three different headings, and a paragraph and I wanted them all to be the color blue<br>
+         I could always give them all seperate IDs and then select the IDs and give them color delcarations, however that's a lot of work. In this case we can use a class. Just like the ID the class goes inside the opening tag, it has to be a unique name, and it's case-sensitive.
+             <em>It would look soemthing like this:<br>
+             <br>
+             <strong>
+                 &lt;h1 class="blue"> This is my first heading  &lt;/h1><br>
+                  &lt;h2 class="blue"> This is my second heading &lt;/h2><br>
+                   &lt;h3 class="blue"> This is my third heading &lt;/h3><br>
+                    &lt;p class="blue"> This is my paragraph &lt;p><br>
+                     </strong></em>
+<br>
+ Now that they all have the same class you can go to your styling tag and put the class in there and change the color to blue.<br>
+When you're selecting a class you have to put a period in front of the class so the computer know that it has to look for a class.<br>
+<em>That will look like this:</em><br>
+<br>
+ <strong>
+             &lt;!Doctype html><br>
+             &lt;html><br>
+             <br>
+             -----&lt;title> "Title" &lt;/title><br>
+             -----&lt;meta charset="utf-8"><br>
+            <br>
+             -----&lt;style><br>
+             <br>
+            .blue {<br>
+            ----- color: blue;<br>
+            }
+             <br>
+             -----&lt;/style><br>
+             <br>
+             &lt;/html>
+             </strong><br>
+             <br>
+             Now everything that has the class "blue" is the color blue.
+         </p>
+         <a href="#short-cuts" id="back-to-blue"> Back to short cuts</a>
+         <h4 id="background-color" class="text-color">Background Color</h4>
+         <p> Now our text looks pretty but the background is still plain and boring. Don't worry we can change that. If we want to select the whole entire page all you need to do is go to the style tag and select the &lt;body> tag.<br>
+         Like I said before, everything that will be seen in the webpage will be in the body tag. This includes the background. <br>
+             <em> The code will look like this:</em><br>
+              <strong>
+             &lt;!Doctype html><br>
+             &lt;html><br>
+             <br>
+             -----&lt;title> "Title" &lt;/title><br>
+             -----&lt;meta charset="utf-8"><br>
+            <br>
+            -----&lt;style><br>
+            <br>
+            ----------body {<br>
+            ---------------background-color: rgb(0, 0, 0);<br>
+            }<br>
+            <br>
+             &lt;/html>
+             </strong>
+             <br>
+             <br>
+             If you're trying this out on a code sheet you may have noticed that the tags and the color declarations turn blue, while the IDs and classes turn green. This is because the computers have a color-coded system to make it easier for us to read.<br>
+             Instead of everything being black, everything has a different color so you can easily spot and differentiate between code.
+         </p>
+<a href="#short-cuts" id="back-to-blue"> Back to short cuts</a>     
+    </body>
+    
+    <h4 id="ID" class="text-color">Links</h4>
+    
+    <p>What if you want to put a  link into a webpage? You guys know what a link is, right? You click on a text and it takes you to a whole new page. Well we're going to learn how to do this.<br>
+        First we're going to need to learn a new tag. <strong>&lt;a>&lt;/a></strong>. This is the attachment tag. Guess what it does. That's right, it attaches one thing to another.<br>
+        Inside the first tag we're going to need to put a reference so the computer knows where to go. This is called <strong>href=""</strong>. You might be thinking this already but href is an attribute.<br>
+        Href stand for HyperReference. This is going to be your link, in this case the URL. Inside the "a" tags you''ll have the text that you'll want people to click on. <em>It'll look like this:</em><br>
+        <br>
+        <strong>&lt;a href="link"> Click here &lt;/a></strong><br>
+        <br>
+        <em>The text should come out looking something like this:</em><br>
+    </p>
+    <a href="https://www.khanacademy.org/computing/computer-programming/html-css/css-text-properties/pp/project-blog">Click here</a><br>
+    <p>If you clicked on it, it probably took you to the page I'm currently working on right now.<br>
+    The reason why the link is the same color as the rest of the text and not blue like the "back to short-cuts" link I have is because I have all &lt;a> tags under a selector that has a color declaration, pretty cool, right?<br>
+        Now this leads me to how to jump around inside of a web-page
+    </p>
+    <a href="#short-cuts" id="back-to-blue"> Back to short cuts</a>
+
+<h4 id="jump-around" class="text-color">Jumping Around a Web-Page</h4>
+</html>
+  
